@@ -16,7 +16,6 @@ def main():
         # Detect faces in the frame
         faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
         
-        # Draw rectangles around detected faces
         for (x, y, w, h) in faces:
             cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
         
