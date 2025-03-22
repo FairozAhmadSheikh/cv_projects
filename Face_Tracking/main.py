@@ -19,10 +19,10 @@ def main():
         for (x, y, w, h) in faces:
             cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
         
-        # Display the frame
+    
         cv2.imshow('Face Tracking', frame)
         
-        # Press 'q' to exit
+    
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     
