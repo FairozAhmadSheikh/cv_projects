@@ -32,8 +32,8 @@ def main():
             break
     
     # Release resources
-#     cap.release()
-#     cv2.destroyAllWindows()
+    cap.release()
+    cv2.destroyAllWindows()
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
     main()
